@@ -39,6 +39,17 @@ export default function App() {
       }}
       >
         <Tab.Screen 
+        name="General" 
+        component={General}
+        options={{
+          tabBarLabel: 'General',
+          tabBarIcon: () => 
+          <Icon 
+          type='font-awesome'
+          name={'globe'} color={'#28a745'} size={30} />,
+        }} 
+        />
+        <Tab.Screen 
         name="Health"
         component={Health} 
         options={{
@@ -58,17 +69,6 @@ export default function App() {
           <Icon 
           type='font-awesome-5'
           name={'baseball-ball'} color={'orange'} size={30} />,
-        }} 
-        />
-        <Tab.Screen 
-        name="General" 
-        component={General}
-        options={{
-          tabBarLabel: 'General',
-          tabBarIcon: () => 
-          <Icon 
-          type='font-awesome'
-          name={'globe'} color={'#28a745'} size={30} />,
         }} 
         />
         <Tab.Screen 
